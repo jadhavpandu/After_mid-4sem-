@@ -1,24 +1,22 @@
+class demo{
+  public int add(int a , int b){
+    int result =a+b;
+    return result;
+  }
+  public int add(int a , int b,int c){
+    int result =a+b+c;
+    return result;
+  }
+
+}
+ 
+
 public class Practice {
-    //instance 
-    int x=5;
-    static String a = "dhoni";
     public static void main(String[] args){
-      int b;
-      System.out.println(b);
-      Practice obj1 = new Practice();
-      Practice obj2 = new Practice();
-      System.out.println(obj1.x);
-      System.out.println(a);
-      a="virat";
-      obj1.x=12;
-      obj2.x=14;
-
-           System.out.println(obj1.x);
-           System.out.println(a);
-           System.out.println(obj2.x);
-           System.out.println(a);
-
-           
-
+       demo obj = new demo();
+      int res1 = obj.add(2,3 );
+      int res2= obj.add(1,2,3);
+        System.out.println(res1);
+        System.out.println(res2);
     }
 }
