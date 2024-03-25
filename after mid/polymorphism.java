@@ -7,7 +7,7 @@ class College{
     }
 }
 class student1 extends College{
-    /* this is method overriding concept here the child class nvoke the propetioe of 
+    /* this is method overriding concept here the child class invoke the propetioe of 
      * parent class and methos content will be change
      */
     public void student(){
@@ -19,15 +19,24 @@ class faculty1 extends College{
         System.out.println("faculty  will hired through education qulification");
     }
 }
+class demo{
+    public void demo1(College ref){
+        ref.student();
+        ref.facuty();
+    }
+}
 public class polymorphism {
     public static void main(String[] args) {
         student1 sub = new student1();
         faculty1 sub1 = new faculty1();
-        College res;
-        res=sub;
-        res=sub1;
-        res.student();;
-        res.facuty();
+       demo a = new demo();
+        // res=sub;
+        // res=sub1;
+        // res.student();;
+        // res.facuty();
+        a.demo1(sub);
+        a.demo1(sub1);
+
 
     }
 }
