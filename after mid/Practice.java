@@ -1,43 +1,25 @@
-class Suzuki{
-  public void red_car(){
-    System.out.println("Suzuki is the red color");
+class demo{
+  public void college(){
+    System.out.println("this is college");
   }
-  public void blue_car(){
-    System.out.println("Suzuki is the blue color car");
-  }
-}
-class maruti extends Suzuki{
-  public void red_car(){
-    System.out.println("maruti is the red color");
-  }
-  public void blue_car(){
-    System.out.println("maruti is the blue color car");
+  public void school(){
+    System.out.println("this is school");
   }
 }
-class tata extends Suzuki{
-  public void red_car(){
-    System.out.println("tata is the red color");
+ class demo1 extends demo{
+  public void college(){
+    System.out.println("this is college jee and neet preperation");
   }
-  public void blue_car(){
-    System.out.println("tata is the blue color car");
+  public void school(){
+    System.out.println("this is school  SSC board preperation");
   }
-}
-class promotion{
-  public void release(Suzuki rr){
-     rr.red_car();
-     rr.blue_car();
-  }
-}
+ } 
 public class Practice {
     public static void main(String[] args){
-     maruti a = new maruti();
-     tata b = new tata();
-    promotion c = new promotion();
-     c.release(a);
-     c.release(b);
-
      
-     
-
+    demo1 sub = new demo1();
+    sub.college();
+    sub.school();
+    
     }
 }

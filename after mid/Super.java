@@ -4,6 +4,7 @@ class demo{
     System.out.println("zero parameters constructor");
   }
   demo(int x , int y){
+    this();
     System.out.println("x");
     System.out.println("y");
   }
@@ -11,7 +12,7 @@ class demo{
 class demo1 extends demo{
   int a ,b;
   demo1(){
-    super();
+    super(2,5);
      System.out.println("this is child class of demo class");
   }
   demo1(int a , int b ){
