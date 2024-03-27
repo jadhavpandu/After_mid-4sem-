@@ -1,25 +1,20 @@
-class demo{
-  public void college(){
-    System.out.println("this is college");
-  }
-  public void school(){
-    System.out.println("this is school");
-  }
+class College{
+    public void teacher(){
+      System.out.println("this is teacher ");
+    }
+    public void student(){
+      System.out.println("this is student class");
+    }
 }
- class demo1 extends demo{
-  public void college(){
-    System.out.println("this is college jee and neet preperation");
-  }
-  public void school(){
-    System.out.println("this is school  SSC board preperation");
-  }
- } 
+class School extends College{
+
+}
 public class Practice {
-    public static void main(String[] args){
-     
-    demo1 sub = new demo1();
-    sub.college();
-    sub.school();
+    static public void  main(String[] args){
+    School sub = new School();
+    sub.teacher();
+    sub.student();
+    
     
     }
 }
