@@ -14,7 +14,7 @@ class Younger extends Elder{
       }
 }
 
-public class Inheritance{
+public class Inheritance_mul{
   public static void main(String[] args) {
    Elder p = new Elder();
    p.getFather();
